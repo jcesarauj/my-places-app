@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:MyPlacesApp/src/models/placeLocation.dart';
+import 'package:MyPlacesApp/src/utils/dbUtil.dart';
 import 'package:flutter/foundation.dart';
 
 class GreatePlacesProvider with ChangeNotifier {
@@ -28,6 +29,12 @@ class GreatePlacesProvider with ChangeNotifier {
     );
 
     _places.add(newPlace);
+
+    DbUtil.insert('places', {
+      'id': newPlace.id,
+      'title': newPlace.title,
+      'image': newPlace.image.path,
+    });
 
     notifyListeners();
   }

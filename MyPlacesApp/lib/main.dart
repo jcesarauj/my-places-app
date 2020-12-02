@@ -3,7 +3,7 @@ import 'package:MyPlacesApp/src/screens/places-list-screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'src/providers/greatePlacesProvider.dart';
-import 'src/utils/app-routes.dart';
+import 'src/utils/appRoutes.dart';
 
 void main() {
   runApp(MyApp());

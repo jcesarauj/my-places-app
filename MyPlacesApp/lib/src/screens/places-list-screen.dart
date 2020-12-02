@@ -1,5 +1,5 @@
 import 'package:MyPlacesApp/src/providers/greatePlacesProvider.dart';
-import 'package:MyPlacesApp/src/utils/app-routes.dart';
+import 'package:MyPlacesApp/src/utils/appRoutes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
