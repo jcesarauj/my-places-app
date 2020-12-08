@@ -1,7 +1,8 @@
 import 'dart:io';
 
 import 'package:MyPlacesApp/src/providers/greatePlacesProvider.dart';
-import 'package:MyPlacesApp/src/widgets/input-image.dart';
+import 'package:MyPlacesApp/src/widgets/InputLocation.dart';
+import 'package:MyPlacesApp/src/widgets/inputImage.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -46,10 +47,10 @@ class _PlaceFormScreenState extends State<PlaceFormScreen> {
                       decoration: InputDecoration(labelText: 'Título'),
                       controller: _titleController,
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    InputImage(this.selectedImage)
+                    SizedBox(height: 10),
+                    InputImage(this.selectedImage),
+                    SizedBox(height: 10),
+                    InputLocation()
                   ],
                 ),
               ),
