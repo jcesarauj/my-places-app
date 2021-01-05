@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:MyPlacesApp/src/providers/greatePlacesProvider.dart';
 import 'package:MyPlacesApp/src/widgets/InputLocation.dart';
 import 'package:MyPlacesApp/src/widgets/inputImage.dart';
